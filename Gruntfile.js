@@ -33,18 +33,17 @@ module.exports = function(grunt) {
       }
     },
 
-    sass: {
+    compass: {
       options: {
-        includePaths: ['bower_components/foundation/scss']
-      },
-      dist: {
-        options: {
-          outputStyle: 'expanded',
-          line_comments: 'true'
-        },
-        files: {
-          'dist/assets/css/app.css': 'src/assets/scss/app.scss'
-        }        
+        importPath: ['bower_components/foundation/scss']
+      },                  
+      dist: {                   
+        options: {              
+          sassDir: ['src/assets/scss/'],
+          cssDir: ['dist/assets/css/'],
+          environment: 'development',
+          outputStyle: 'expanded'
+        }
       }
     },
 
@@ -73,9 +72,9 @@ module.exports = function(grunt) {
         tasks: ['build'] 
       },
 
-      sass: {
-        files: 'src/assets/scss/**/*.scss',
-        tasks: ['sass']
+      compass: {
+        files: ['src/assets/scss/**/*.scss'],
+        tasks: ['compass']
       },
 
       copy: {
@@ -104,14 +103,15 @@ module.exports = function(grunt) {
     }
   });
 
-  grunt.loadNpmTasks('grunt-sass');
+  // grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-compass');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('assemble');
   grunt.loadNpmTasks('grunt-newer');
 
-  grunt.registerTask('build', ['clean','sass','uglify','assemble','copy']);
+  grunt.registerTask('build', ['clean','compass','uglify','assemble','copy']);
   grunt.registerTask('default', ['build','watch']);
 }

@@ -1,6 +1,7 @@
-# The Juiced Foundation Stack
+# Foundation Compass Stack
+### A Foundation template on steroids!
 
-This is a template for your next web project using Foundation, Grunt, Libsass, and Assemble!
+This is a template for your next web project using Foundation, Grunt, Compass, and Assemble!
 
 ## Requirements
 
@@ -14,10 +15,10 @@ You'll need to have the following items installed before continuing.
 ## Quickstart
 
 Clone this repository:
-`git clone git@github.com:zurb/foundation-libsass-template.git`
+`git clone git@github.com:zurb/foundation-compass-stack.git`
 
 Navigate into the directory:
-`cd foundation-libsass-template`
+`cd foundation-compass-stack`
 
 Install all the dependincies:
 `npm install && bower install`
