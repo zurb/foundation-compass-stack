@@ -1,5 +1,4 @@
 # Foundation Compass Stack
-### A Foundation template on steroids!
 
 This is a template for your next web project using Foundation, Grunt, Compass, and Assemble!
 
