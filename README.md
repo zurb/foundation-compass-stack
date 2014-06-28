@@ -6,10 +6,12 @@ This is a template for your next web project using Foundation, Grunt, Compass, a
 ## Requirements
 
 You'll need to have the following items installed before continuing.
-
-  * [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
-  * [Grunt](http://gruntjs.com/): Run `sudo npm install -g grunt-cli`
-  * [Bower](http://bower.io): Run `sudo npm install -g bower`
+	
+* [Ruby](http://ruby-lang.org/): If you are on OSX or Linux, you should already have Ruby installed. If not, check their website for installation options.
+* [Node.js](http://nodejs.org): Use the installer provided on the NodeJS website.
+* [Grunt](http://gruntjs.com/): Run `sudo npm install -g grunt-cli`
+* [Bower](http://bower.io): Run `sudo npm install -g bower`
+* [Sass](http://sass-lang.com) & [Compass](http://compass-style.org): Run `gem update --system && gem install compass`
 
 
 ## Quickstart
