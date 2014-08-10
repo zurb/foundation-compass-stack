@@ -22,7 +22,7 @@ module.exports = function(grunt) {
       },
       dist: {
         options: {
-          partials: ['src/includes/*.html'],
+          partials: ['src/partials/*.html'],
           helpers: ['src/helpers/*.js'],
           layout: 'src/layouts/default.html'
         },
@@ -90,7 +90,7 @@ module.exports = function(grunt) {
       },
 
       assemble_all: {
-        files: ['src/{includes,layouts}/**/*.html'],
+        files: ['src/{partials,layouts}/**/*.html'],
         tasks: ['assemble'],
         options: {livereload:true}
       },
@@ -104,8 +104,8 @@ module.exports = function(grunt) {
   });
 
   // grunt.loadNpmTasks('grunt-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-compass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-uglify');
